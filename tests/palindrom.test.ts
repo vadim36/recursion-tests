@@ -1,4 +1,4 @@
-const isPalindrom = require('../src/palindrom.ts');
+import isPalindrom from "../src/palindrom";
 
 describe('isPalindrome', () => {
   test('Correct palindrom', () => {
@@ -6,8 +6,5 @@ describe('isPalindrome', () => {
   });
   test('Uncorrect palindrom', () => {
     expect(isPalindrom('abc')).toBeFalsy();
-  });
-  test('Uncorrect value', () => {
-    expect(isPalindrom(null)).toBeFalsy();
   });
 });

@@ -5,4 +5,4 @@ function factorial(number:number):number | boolean {
   return factorial(number - 1) as number * number;
 }
 
-module.exports = factorial;
+export default factorial;

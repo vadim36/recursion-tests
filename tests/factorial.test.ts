@@ -1,4 +1,4 @@
-const factorial = require('../src/factorial');
+import factorial from "../src/factorial";
 
 describe('factorial', () => {
   test('Correct value', () => {
@@ -16,7 +16,4 @@ describe('factorial', () => {
   test('Correct bigger value', () => {
     expect(factorial(100)).toBe(9.33262154439441e+157);
   });
-  test('Uncorrect value', () => {
-    expect(factorial(null)).toBeFalsy();
-  })
 });

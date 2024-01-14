@@ -41,6 +41,6 @@ function getNodes(levelIndex:number, branchesArray:TTreeBranchObject[]):NodeElem
   return nodes;
 }
 
-module.exports = {
+export {
   getTreeNodes
 }

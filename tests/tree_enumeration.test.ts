@@ -1,5 +1,4 @@
-const treeEnumerationModule = require('../src/tree_enumeration.ts');
-const getTreeNodes = treeEnumerationModule.getTreeNodes;
+import { getTreeNodes } from "../src/tree_enumeration";
 
 describe('getTreeNodes', () => {
   //let testObject: ;

@@ -6,10 +6,16 @@
     "strict": true,
     "target": "ESNext",
     "customConditions": ["module"],
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
+    "noEmit": false,
+    //"allowImportingTsExtensions": true,
     "allowArbitraryExtensions": true,
+    "allowSyntheticDefaultImports": true,
     "verbatimModuleSyntax": false,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
   }
 }
