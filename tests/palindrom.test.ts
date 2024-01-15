@@ -1,10 +1,10 @@
 import isPalindrom from "../src/palindrom";
 
 describe('isPalindrome', () => {
-  test('Correct palindrom', () => {
+  test('Correct palindrom', ():void => {
     expect(isPalindrom('abccba')).toBeTruthy();
   });
-  test('Uncorrect palindrom', () => {
+  test('Uncorrect palindrom', ():void => {
     expect(isPalindrom('abc')).toBeFalsy();
   });
 });

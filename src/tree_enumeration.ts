@@ -1,19 +1,19 @@
-type TTreeBranchObject = {
+export type TTreeBranchObject = {
   [index:string]:number
 }
 
-type TTemplateObject = {
+export type TTemplateObject = {
   [index:string]: TTreeBranchObject
 }
 
-class NodeElement {
+export class NodeElement {
   constructor (
     readonly body:number,
     public childrens?:NodeElement[]
   ) {}
 }
 
-function getTreeNodes(objectTMP:TTemplateObject):NodeElement[] {
+export function getTreeNodes(objectTMP:TTemplateObject):NodeElement[] {
   const treeBranches:TTreeBranchObject[] = Object.values(objectTMP);
   const nodes: NodeElement[] = [];
 
@@ -39,8 +39,4 @@ function getNodes(levelIndex:number, branchesArray:TTreeBranchObject[]):NodeElem
   });
 
   return nodes;
-}
-
-export {
-  getTreeNodes
 }
